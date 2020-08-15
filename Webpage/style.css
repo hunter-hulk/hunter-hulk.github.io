@@ -1,6 +1,7 @@
 :root {
     --nav-color-1: #449DD1;
-    --nav-color-2: #78C0E0;
+    /* --nav-color-2: #78C0E0; */
+    --nav-color-2: black;
 }
 
 
