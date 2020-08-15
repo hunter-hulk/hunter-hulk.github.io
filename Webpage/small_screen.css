@@ -1,6 +1,6 @@
 @media only screen and (max-width: 850px) {
 
-
+    /* changes size and positioning of image when screen size is reduced */
     p img {
         float: none;
         display: block;

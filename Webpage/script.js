@@ -1,18 +1,19 @@
- // Get all the lightbox elements and convert them to an array
+ // get all the lightbox elements and convert them to an array
 const lightboxElements = Array.from(document.querySelectorAll('[data-lightbox-src]'));
 
-// On each lightbox element
+// on each lightbox element
 lightboxElements.forEach(lightboxElement => {
-  // Start listening to when they are clicked
+  // start listening to when they are clicked
   lightboxElement.addEventListener('click', () => {
-    // Get the big src from the lightbox element
+    // get the big src from the lightbox element
     const src = lightboxElement.dataset.lightboxSrc;
     
-    // Whatever you need to do to open the modal
+    // whatever you need to do to open the modal
     openLightBox(src);
   });
 });
 
+// checks keys pressed and runs close Modal if key is Escape
 document.addEventListener('keydown', ()=> {
     if (event.key === 'Escape') {
         closeModal();
@@ -21,12 +22,12 @@ document.addEventListener('keydown', ()=> {
 });
 
 function openLightBox(src) {
-  // Update the src in your big image, check the selector is right here
+  // update the src in your big image and check the selector is right here
   document.querySelector('.modal img').src = src;
-  
+  // makes model visible
   document.querySelector('.modal').classList.add('visible');
 }
-
+// closes modal
 function closeModal() {
   document.querySelector('.modal').classList.remove('visible');
 }
