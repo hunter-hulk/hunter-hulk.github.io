@@ -1,0 +1,9 @@
+@media only screen and (max-width: 850px) {
+
+
+    p img {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+}
