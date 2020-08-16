@@ -65,7 +65,16 @@ nav a:active {
     background-color: rgba(0, 0, 0, 0.404);
 }
 
+.home-page {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
+.preview {
+    
+}
 
 .page {
     margin: 20px;
