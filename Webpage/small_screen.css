@@ -7,3 +7,12 @@
         margin: auto;
     }
 }
+
+@media only screen and (max-width: 1280px) {
+
+    /* changes size and positioning of image when screen size is reduced */
+    .home-page{
+        flex-direction: column;
+        width: unset;
+    }
+}

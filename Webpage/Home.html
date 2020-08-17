@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <title>Home</title>
     <link rel="stylesheet" href="style.css" media="all">
@@ -6,7 +7,7 @@
     <!-- change the scale that the browser reads from so will use smallscreen css when needed -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <!-- addes new font -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,27 +22,32 @@
     <!-- all main content of body -->
     <main>
         <div class="home-page">
-            <div class="preview">
-                <img src="media/Coffee.jpg" alt="picture of Coffee">
-                <div class="p-writing">
-                    Benifits of Coffee.
+            <a href="Coffee.html">
+                <div class="preview">
+                    <img src="media/Coffee.jpg" alt="picture of Coffee" width="400px" height="300px">
+                    <div class="p-writing">
+                        <p>Benifits of Coffee</p>
+                    </div>
                 </div>
+            </a>
+            <a href="Healthy_food.html">
+                <div class="preview">
+                    <img src="media/Egg.jpg" alt="Fried Egg" width="400px" height="300px">
+                    <div class="p-writing">
+                        <p>Benifits of Eggs</p>
+                    </div>
 
-            </div>
-            <div class="preview">
-                <img src="media/Egg.jpg" alt="Fried Egg">
-                <div class="p-writing">
-                    Benifits of Eggs
                 </div>
+            </a>
+            <a href="Healthy_food.html#nana-link">
+                <div class="preview">
+                    <img src="media/Banana.jpg" alt="bunch of Bananas" width="400px" height="300px">
+                    <div class="p-writing">
+                        <p>Benifits of Bananas</p>
+                    </div>
+                </div>
+            </a>
 
-            </div>
-            <div class="preview">
-                <img src="media/Banana.jpg" alt="bunch of Bananas">
-                <div class="p-writing">
-                    Benifits of Bananas
-                </div>
-            </div>
-          
         </div>
         <!-- light box image and close button -->
         <div class="modal">
@@ -51,6 +57,9 @@
     </main>
     <footer>
         <span>© 2020 Samuel Hunt</span>
+        <span>Photos retrieved from <cite><a href="https://www.pikist.com/free-photo-vfepm" target="blank">Pikist
+                </a></cite>
+            16/08/2020</span>
     </footer>
     <script src="script.js"></script>
 </body>
