@@ -12,6 +12,7 @@
 
     /* changes size and positioning of image when screen size is reduced */
     .home-page{
+        /* margin: auto; */
         flex-direction: column;
         width: unset;
     }
