@@ -6,12 +6,17 @@
         display: block;
         margin: auto;
     }
+
+    /* removes slide show from nav bar so screen can go smaller */
+    .slide_show {
+        display: none   ;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
 
     /* changes positioning of image when screen size is reduced */
-    .home-page{
+    .home-page {
         flex-direction: column;
         width: unset;
     }

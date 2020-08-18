@@ -1,16 +1,13 @@
 /* Color scheme #78C0E0, #449DD1, #0E0E52 */
 
-/* addes varible colors */
+/* addes variable colors */
 :root {
     --nav-color-1: #449DD1;
     --nav-color-2: #78C0E0;
-}   
-
-
+}
 
 html {
     height: 100%;
-    /* width: 100%; */
 }
 
 header {
@@ -27,16 +24,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%    ;
+    height: 100%;
     font-family: 'Noto Sans JP', sans-serif;
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-    flex: 0 1 auto;
-    width: 100%;
-    justify-content: center;
 }
 
 /* nav */
@@ -69,12 +58,26 @@ nav a:active {
     background-color: rgba(0, 0, 0, 0.404);
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+    width: 100%;
+    justify-content: center;
+}
+
 .home-page {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
 
+}
+
+.home-page a,
+.home-page a:visited {
+    color: black;
+    text-decoration: none;
 }
 
 .preview {
@@ -89,10 +92,19 @@ nav a:active {
     max-width: 100%;
 }
 
+/* addes a shodow around the links on home page when you hover over them */
 .preview:hover {
     box-shadow: 0 4px 8px 0 rgba(165, 164, 164, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* makes image resize when you reduced screen size */
+.preview img {
+    border-radius: 5px 5px 0 0;
+    max-width: 100%;
+    height: auto;
+}
+
+/* makes a white box around the writing in the links on home page and put writing in middle of the class */
 .p-writing {
     background-color: whitesmoke;
     padding: 5px;
@@ -109,13 +121,6 @@ nav a:active {
     margin: 20px;
 }
 
-
-.preview img {
-    border-radius: 5px 5px 0 0;
-    max-width: 100%;
-    height: auto;
-}
-
 /* moves image to right place in paragraph so it doesnt interfear with wrighting */
 p img {
     float: right;
@@ -126,13 +131,6 @@ p img {
     cursor: pointer;
 }
 
-.home-page a, .home-page a:visited {
-    color: black;
-    text-decoration: none;
-}
-
-
-
 footer {
     background-image: linear-gradient(45deg, var(--nav-color-1), var(--nav-color-2));
     display: flex;
@@ -141,9 +139,8 @@ footer {
     flex-direction: row;
     padding-left: 15px;
     padding-right: 5px;
-    flex: 0 0 60px; 
+    flex: 0 0 60px;
 }
-
 
 /* Light box */
 
@@ -188,7 +185,6 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
-
 
 img.hover-shadow {
     transition: 0.3s;
