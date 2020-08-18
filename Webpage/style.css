@@ -90,11 +90,20 @@ main {
     padding: 8px;
     border-radius: 8px;
     max-width: 100%;
+    /* transition: transform 500ms; */
+    animation: slidein 3s 1s infinite linear;
 }
 
 /* addes a shodow around the links on home page when you hover over them */
 .preview:hover {
     box-shadow: 0 4px 8px 0 rgba(165, 164, 164, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* transform: scale(1.1); */
+}
+
+@keyframes slidein {
+    0%  { transform: scale(1); }
+    35% { transform: scale(1.03); }
+    70% { transform: scale(1); }
 }
 
 /* makes image resize when you reduced screen size */
